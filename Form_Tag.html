@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Tag</title>
+    <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Urbanist:wght@300;400;600;700;800;900&display=swap");
+    html {
+        font-family: "jost", sans-serif;
+        background-color: #efefef;
+    }
+    h1 {
+        font-weight: bold;
+    }
+    </style>
+</head>
+<body>
+    <h1>HTML Form Tag</h1>
+    <hr>
+    <form>
+        <div>
+            <label for="username">username</label>
+            <input type="text" id="username" placeholder="Enter your username" required autocomplete="off" size="30" value="ABC" readonly disabled>
+        </div>
+        <div>
+            <label for="password">password</label>
+            <input type="password" id="password" placeholder="Enter your password" required>
+        </div>
+        <div>
+            <label for="number">max subject</label>
+            <input type="number" id="number" max="9" min="0" value="0" required>
+        </div>
+        <div>
+            <label for="email">Enter your email</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email" required autocomplete="off">
+        </div>
+        <div>
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender" value="male"> male
+            <input type="radio" name="gender" value="female"> female
+        </div>
+        <div>
+            <label for="hobbies">Fav Hobbies</label>
+            <input type="checkbox" name="interest" value="music"> music
+            <input type="checkbox" name="interest" value="sports"> sports
+        </div>
+        <div>
+            <label for="country">Fav Country: </label>
+            <select name="country" id="country">
+            <option value="none">None</option>
+            <option value="usa">USA</option>
+            <option value="india">India</option>
+            <option value="ireland">ireland</option>
+            <option value="uk">UK</option>
+            </select>
+        </div>
+        <div>
+            <label for="country">Select a Country: </label>
+            <input type="text" id="country" name="country" list="countries">
+            <datalist id="countries">
+                <option value="none">None</option>
+                <option value="usa">USA</option>
+                <option value="india">India</option>
+                <option value="ireland">ireland</option>
+                <option value="uk">UK</option>
+            </datalist>
+        </div>
+        <div>
+            <label for="textarea">Message Us: </label>
+            <textarea name="comments" id="textarea" cols="50" rows="4" placeholder="Enter your comments"></textarea>
+        </div>
+        <div>
+            <label for="file">Select File</label>
+            <input type="file" name="fileUpload">
+        </div>
+        <input type="submit" value="Submit">
+        <!-- OR -->
+         <button type="submit">Submit</button>
+         <hr>
+         <div>
+            <label for="range">Range: </label>
+            <input type="range" name="volume" min="0" max="100" value="80">
+         </div>
+         <br>
+         <div>
+            <label for="birthdate">birthdate: </label>
+            <input type="date" name="birthdate">
+         </div>
+         <br>
+         <div>
+            <label for="appointmentTime">appointment Time: </label>
+            <input type="time" name="appointmentTime">
+         </div>
+         <br>
+         <div>
+            <label for="favoriteColor">favorite Color: </label>
+            <input type="color" name="favoriteColor">
+         </div>
+         <br>
+         <div>
+            <label for="website">website: </label>
+            <input type="url" name="website" placeholder="Enter website URL">
+         </div>
+         <br>
+         <div>
+            <label for="searchQuery">search Query: </label>
+            <input type="search" name="searchQuery" placeholder="search ...">
+         </div>
+         <br>
+         <div>
+            <label for="expiryDate">Month & Year: </label>
+            <input type="month" name="expiryDate">
+         </div>
+         <br>
+         <div>
+            <label for="week">vacation Week: </label>
+            <input type="week" name="vacationWeek">
+         </div>
+    </form>
+</body>
+</html>
