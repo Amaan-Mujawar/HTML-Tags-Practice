@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Tag</title>
+    <style>
+        html {
+            font-family: "jost", sans-serif;
+            font-weight: bold;
+            text-align: center;
+            background-color: #efefef;
+        }
+        img {
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            border-radius: 8px;
+            max-width: 500px;
+            max-height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Image Tag</h1>
+    <img src="./Assets/Sunset.jpg" alt="A Beautiful photo of Sunset at beach." width="100%" height="auto" title="Sunset at beach." loading="lazy" />
+    <a href="https://www.google.com/"><img src="./Assets/Google.png" alt="A photo of Google Logo."></a>
+    <img 
+        src="./Assets/Lake.jpg" 
+        alt="A Beautiful photo of Boat in the Lake" 
+        width="100%" 
+        height="auto" 
+        usemap="#map"
+        title="Clickable World Map" 
+    />
+    <!-- <map name="map">
+        <area 
+            shape="rect" 
+            coords="0, 0, 250, 150" 
+            href="https://en.wikipedia.org/wiki/Lake" 
+            alt="wikipedia page on Lake."
+            target="_blank">
+    </map> -->
+    <map name="map">
+        <area 
+            shape="circle" 
+            coords="200, 150, 50" 
+            href="https://en.wikipedia.org/wiki/Lake" 
+            alt="wikipedia page on Lake."
+            target="_blank">
+    </map>
+    <!-- <map name="map">
+        <area 
+            shape="poly" 
+            coords="500, 100, 350, 200, 400, 250" 
+            href="https://en.wikipedia.org/wiki/Lake" 
+            alt="wikipedia page on Lake."
+            target="_blank">
+    </map> -->
+    <br>
+    <img 
+        src="./Assets/Mountains.jpg" 
+        alt="A photo of Mountains with Beautiful Sunset."
+        srcset="
+            /Assets/Mountains.jpg   400w,
+            /Assets/Mountains.jpg   600w,
+            /Assets/Mountains.jpg   800w,
+            /Assets/Mountains.jpg   1000w
+        "
+        sizes="
+            (max-width: 600w) 400px,
+            (max-width: 800w) 600px,
+            (max-width: 1000w) 800px,
+            (max-width: 1200w) 1000px,
+            1200px
+        "
+    >
+</body>
+</html>
