@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Tag</title>
+    <style>
+        html {
+            font-family: "jost", sans-serif;
+            background-color: #efefef;
+        }
+        h1 {
+            font-weight: bold;
+        }
+        li {
+            text-transform: capitalize;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML LIST TAG</h1>
+    <hr>
+    <h2>List of Fruits</h2>
+    <ul>
+        <li style="list-style-type: disc;">apple</li>
+        <li style="list-style-type: circle;">banana</li>
+        <li style="list-style-type: square;">mango</li>
+        <li style="list-style-type: none;">pears</li>
+    </ul>
+    <hr>
+    <h2>Steps to Make Tea</h2>
+    <ol>
+        <li style="list-style-type: decimal;">Boil water.</li>
+        <li style="list-style-type: lower-alpha;">Add tea leaves or a tea bag.</li>
+        <li style="list-style-type: upper-alpha;">Let it steep for a few minutes.</li>
+        <li style="list-style-type: lower-roman;">Pour into a cup.</li>
+        <li style="list-style-type: upper-roman;">Add sugar or milk as desired.</li>
+    </ol>
+    <hr>
+    <!-- type attribute -->
+    <ol type="1">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+    <hr>
+    <ol type="A">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+    <hr>
+    <ol type="i">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+    <!-- start attribute -->
+    <hr>
+    <ol start="5">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+    <hr>
+    <!-- example -->
+    <ul>
+        <li>Fruits
+            <ol>
+                <li>Banana</li>
+                <li>Apple
+                    <ul style="list-style-type: square;">
+                        <li>Green</li>
+                        <li>Red</li>
+                    </ul>
+                </li>
+                <li>Pears</li>
+            </ol>
+        </li>
+        <li>Vegetables</li>
+        <li>Meat</li>
+    </ul>
+    <hr>
+    <!-- navigation example -->
+     <ul style="list-style-type: none; display: flex; gap: 15px;">
+        <li><a href="https://www.google.com/" title="Click to visit the Google Homepage." target="_blank">Home</a></li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Contact</li>
+     </ul>
+</body>
+</html>
